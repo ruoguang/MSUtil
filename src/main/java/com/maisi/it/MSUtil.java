@@ -314,7 +314,7 @@ public class MSUtil {
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
-            url = new URL("https://ccdcapi.alipay.com/validateAndCacheCardInfo.json?_input_charset=utf-8&cardNo=6214832184369903&cardBinCheck=true");
+            url = new URL("https://ccdcapi.alipay.com/validateAndCacheCardInfo.json?_input_charset=utf-8&cardNo="+cardNo+"&cardBinCheck=true");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             PrintWriter out = null;
             conn.setRequestProperty("accept", "*/*");
